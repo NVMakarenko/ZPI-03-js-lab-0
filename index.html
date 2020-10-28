@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab_0</title>
+  </head>
+  <body>
+    <h1>Вступна практична робота №0</h1>
+    <h2>Завдання</h2>
+    <ol>
+      <li> Виконати скрипт із зовнішнього файлу</li>
+      <li> Виконати вбудований скрипт</li>
+      <li> Задіяти цикл у коді </li>
+      <li> Ознайомитись зі складними структурами даних </li>
+    </ol>
+
+    <p>Макаренко Наталія, студентка 2 курсу, група ЗПІ-03
+
+
+     <script src="script_alert.js"></script>
+
+     <script>
+        let contin = confirm("Готові продовжити?");
+        if (contin == false) {
+          for (let i = 0; i < 3; i++) {
+            alert('Ви впевнені, що не хочете продовжити?');
+          }
+        } else {
+          alert('Продовжуємо');
+        }
+        alert ('Вбудований скрипт із циклом виконано')
+        console.log("Test Console");
+      </script>
+       
+
+      <script>
+        let shoplist = new Map ([
+          ["шоколад", 3],
+          ["кава", 2],
+          ["лимон", 1],
+          ["гвоздика", 1],
+        ]);
+
+        alert("Потрібно купити " + shoplist.size + ' найменувань, а саме:');
+           
+        for (let product of shoplist.keys()) {
+            alert(product);
+        }
+
+      </script>
+  </body>
+</html>
